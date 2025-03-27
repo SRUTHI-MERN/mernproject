@@ -1,0 +1,421 @@
+header {
+    background: #aa3bbe;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Animated Heading with Shadow */
+  .animated-heading {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-shadow: 4px 4px 10px rgba(255, 246, 255, 0.5);
+  }
+  
+  /* Animation for each letter */
+  .animated-heading span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: letter-fade 0.8s ease-in-out forwards;
+  }
+  
+  /* Keyframes for the animation */
+  @keyframes letter-fade {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  /* Delay each letter */
+  .animated-heading span:nth-child(1) { animation-delay: 0s; }
+  .animated-heading span:nth-child(2) { animation-delay: 0.1s; }
+  .animated-heading span:nth-child(3) { animation-delay: 0.2s; }
+  .animated-heading span:nth-child(4) { animation-delay: 0.3s; }
+  .animated-heading span:nth-child(5) { animation-delay: 0.4s; }
+  .animated-heading span:nth-child(6) { animation-delay: 0.5s; }
+  .animated-heading span:nth-child(7) { animation-delay: 0.6s; }
+  .animated-heading span:nth-child(8) { animation-delay: 0.7s; }
+  .animated-heading span:nth-child(9) { animation-delay: 0.8s; }
+  .animated-heading span:nth-child(10) { animation-delay: 0.9s; }
+  
+  /* Logo Styling with Round Shadow */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .logo {
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Styling for Available Languages Section */
+  .languages-section {
+    text-align: center;
+    padding: 40px;
+    background: #aa3bbe;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  .language-box {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    background: #debbea;
+  }
+  
+  .language-box h3 {
+    margin-bottom: 10px;
+  }
+  
+  /* Start Button */
+  .start-button {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #7e3b88;
+    color: white;
+    border: 2px solid #aa3bbe;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background: #a759a7;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background: #b157be;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  
+  .footer-container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    margin: 10px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #debbea;
+  }
+  
+  /* Small Taskbar */
+  header {
+    background: #aa3bbe; /* Green */
+    color: rgb(255, 255, 255);
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  /* Logo */
+  .logo {
+    width: 150px;   /* Adjust width as needed */
+    height: auto;   /* Keeps aspect ratio intact */
+    border-radius: 50%;  /* Optional: Makes the image round */
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Italic Text */
+  .main-text {
+    font-size: 32px;
+    font-style: italic;
+    color: #9c0f9c; /* Green */
+    margin-top: 10px;
+  }
+  
+  /* Start Button */
+  .start-button {
+    margin: 10px;
+  }
+  
+  .start-button button {
+    background: #008000; /* Green */
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .start-button button:hover {
+    background: #101410; /* Darker Green */
+  }
+  /* Center the logo and adjust its size */
+  .logo {
+    display: block;
+    margin: 80px auto 20px;  /* Adjust top margin to move it down */
+    width: 500px;  /* Increase size */
+    height: auto;
+  }
+  .profile-logo {
+    width: 20px; /* Adjust size */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px; /* Space between icon and text */
+  }
+  .languages-section h2 {
+    color: white; /* Changes the Available Languages heading to white */
+  }
+  
+  .language-box {
+    color: #bb9bbb; /* Ensures text inside language boxes is also white */
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #d23ad2; /* Purple */
+    color: white;
+    border: 2px solid white; /* White border */
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background: #6a007a; /* Darker purple on hover */
+  }
+  /* General Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #debbea;
+  }
+  
+  /* Small Taskbar */
+  header {
+    background: #aa3bbe; /* Purple */
+    color: rgb(255, 255, 255);
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Logo */
+  .logo {
+    display: block;
+    margin: 80px auto 20px;
+    width: 500px;
+    height: auto;
+  }
+  
+  /* Italic Text */
+  .main-text {
+    font-size: 32px;
+    font-style: italic;
+    color: #9c0f9c; /* Purple */
+    margin-top: 10px;
+  }
+  
+  /* Start Button */
+  .start-button {
+    margin: 10px;
+  }
+  
+  .start-button button {
+    background: #d23ad2; /* Purple */
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .start-button button:hover {
+    background: #6a007a; /* Darker purple */
+  }
+  
+  /* Profile Icon */
+  .profile-logo {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  /* Language Section */
+  .languages-section h2 {
+    color: white;
+  }
+  
+  /* Language Box with White Shadow */
+  .language-box {
+    color: #5d085d; /* Purple text */
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6); /* White glow effect */
+    transition: 0.3s;
+  }
+  
+  .language-box:hover {
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.9); /* Brighter on hover */
+  }
+  
+  /* General Button Styling */
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #d23ad2;
+    color: white;
+    border: 2px solid #6a007a; /* Purple border */
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background: #6a007a;
+  }
+  .languages-section h2 {
+    font-size: 30px; /* Bigger text */
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase; /* Makes it all caps */
+    letter-spacing: 3px; /* Adds spacing between letters */
+  }
+  @keyframes glowing-shadow {
+    0% { box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.8); }
+    50% { box-shadow: 0px 0px 40px 15px rgba(255, 255, 255, 1); }
+    100% { box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.8); }
+  }
+  
+  .logo {
+    animation: glowing-shadow 1.5s infinite alternate;
+    width : 250px;
+    height : 270px;
+  }
+  /* Style navigation links */
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; /* Makes the text bold */
+    font-size: 18px;
+  }
+  /* Navigation Bar Fix */
+  nav {
+    display: flex;
+    justify-content: center;
+    background: #aa3bbe;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background: #690862;
+    border-radius: 5px;
+  }
