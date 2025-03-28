@@ -40,15 +40,15 @@ const Profile = () => {
   return (
     <div style={styles.body}>
       <div style={styles.profileContainer}>
-        <h2 style={styles.heading}>Welcome, {user ? user.name : 'SRUTHI K'}</h2>
+        <h2 style={styles.heading}>Welcome, {user ? user.name : 'User'}</h2>
         <div style={styles.profileBoxes}>
           <div style={styles.box}>
             <h3>Progress</h3>
-            <p>{user ? `${user.progress}%` : 'Completed'}</p>
+            <p>{user ? `${user.progress}%` : 'Loading...'}</p>
           </div>
           <div style={styles.box}>
             <h3>Completion Status</h3>
-            <p>{user ? user.completionStatus : '100%'}</p>
+            <p>{user ? user.completionStatus : 'Loading...'}</p>
           </div>
           <div style={styles.box}>
             <h3>Choose Your Language</h3>
@@ -61,7 +61,7 @@ const Profile = () => {
           </div>
           <div style={styles.box}>
             <h3>Badges & Achievements</h3>
-            <p>{user ? user.achievements : 'Completed 1st level'}</p>
+            <p>{user ? user.achievements : 'Loading...'}</p>
           </div>
         </div>
         <button onClick={handleLogout} style={styles.logoutButton}>Logout</button>
@@ -76,7 +76,7 @@ const styles = {
     margin: 0,
     padding: 0,
     textAlign: 'center',
-    backgroundColor: '#ccffcc',  
+    backgroundColor: '#ccffcc',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
